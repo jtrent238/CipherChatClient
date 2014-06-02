@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="322.0" prefWidth="442.0" styleClass="back" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.UpdateController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TextArea id="updateBox" fx:id="helpBox" editable="false" layoutX="14.0" layoutY="41.0" prefHeight="197.0" prefWidth="414.0" wrapText="true" />
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

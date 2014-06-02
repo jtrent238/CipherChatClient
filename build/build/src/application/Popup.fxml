@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorOne" maxHeight="-Infinity" maxWidth="1000.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="118.0" prefWidth="402.0" styleClass="back, popup" xmlns:fx="http://javafx.com/fxml" fx:controller="application.PopupController">
+  <children>
+    <ImageView fx:id="image" fitHeight="81.0" fitWidth="81.0" layoutX="14.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@blank.png" />
+      </image>
+    </ImageView>
+    <Label id="message" fx:id="messageLabel" cache="false" layoutX="109.0" layoutY="56.0" maxWidth="686.0" text="Message">
+      <font>
+        <Font name="Segoe UI" size="12.0" />
+      </font>
+    </Label>
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>

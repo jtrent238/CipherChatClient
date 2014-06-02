@@ -1,4 +1,4 @@
 CipherChatClient
 ================
 
-An encrypted chat client with AES and RSA encryption
+An encrypted chat client with AES 128 bit and RSA 4096 encryption.

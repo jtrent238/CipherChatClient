@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainAnchor" opacity="1.0" prefHeight="200.0" prefWidth="408.0000999999975" styleClass="back" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label fx:id="serverIPLbl" layoutX="14.0" layoutY="28.0" prefWidth="175.0" text="Server IP">
+      <font>
+        <Font name="Segoe UI" size="12.0" fx:id="x1" />
+      </font>
+    </Label>
+    <TextField fx:id="serverIPBox" layoutX="14.0" layoutY="50.0" prefWidth="175.0" />
+    <Label fx:id="portLbl" font="$x1" layoutX="215.0" layoutY="28.0" prefWidth="175.0" text="Port" />
+    <TextField fx:id="portBox" layoutX="215.0" layoutY="50.0" prefWidth="175.0" />
+    <PasswordField fx:id="passwordBox" layoutX="14.0" layoutY="103.0" prefWidth="175.0" promptText="Optional" />
+    <TextField id="serverIPBox" fx:id="usernameBox" layoutX="215.0" layoutY="103.0" prefWidth="175.0" promptText="a-z A-Z 0-9 _ - chars allowed" />
+    <Label fx:id="passwordLbl" font="$x1" layoutX="14.0" layoutY="81.0" prefWidth="175.0" text="Server Password" />
+    <ImageView fx:id="settingsButton" fitHeight="23.0" fitWidth="23.0" layoutX="14.0" layoutY="137.0" onMouseClicked="#settingsClicked" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/gear.png" />
+      </image>
+    </ImageView>
+    <Button id="startServer" fx:id="connectButton" layoutX="14.0" layoutY="167.0" mnemonicParsing="false" onAction="#connectClicked" prefHeight="22.0" prefWidth="376.0" text="Connect" />
+    <Label fx:id="usernameLbl" font="$x1" layoutX="215.0" layoutY="81.0" prefWidth="175.0" text="Username" />
+    <ImageView id="favoriteButton" fx:id="favoritesButton" fitHeight="23.0" fitWidth="23.0" layoutX="55.0" layoutY="137.0" onMouseClicked="#favoritesClicked" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@../images/favorite.png" />
+      </image>
+    </ImageView>
+  </children>
+</AnchorPane>

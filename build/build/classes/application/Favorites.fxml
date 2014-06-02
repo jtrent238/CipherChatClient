@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="516.0" prefWidth="396.0" styleClass="back" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="application.FavoritesController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TextField fx:id="serverIPBox" layoutX="14.0" layoutY="363.0" prefWidth="156.0" />
+    <TextField fx:id="portBox" layoutX="226.0" layoutY="363.0" prefWidth="156.0" />
+    <PasswordField fx:id="passwordBox" layoutX="14.0" layoutY="407.0" prefWidth="156.0" />
+    <TextField fx:id="usernameBox" layoutX="226.0" layoutY="407.0" prefWidth="156.0" />
+    <TableView id="favoritesTabl" fx:id="favoriteTable" editable="true" layoutX="14.0" layoutY="39.0" onContextMenuRequested="#tableClicked" prefHeight="294.0" prefWidth="368.0" />
+    <Label id="serverIPBox" fx:id="serverIPLbl" layoutX="14.0" layoutY="347.0" prefWidth="156.0" text="Server IP" />
+    <Label id="serverIPBox" fx:id="portLbl" layoutX="226.0" layoutY="347.0" prefWidth="156.0" text="Port" />
+    <Label id="serverIPBox" fx:id="passwordLbl" layoutX="14.0" layoutY="391.0" prefWidth="156.0" text="Server Password (Optional)" />
+    <Label id="serverIPBox" fx:id="usernameLbl" layoutX="226.0" layoutY="391.0" prefWidth="156.0" text="Username" />
+    <Button fx:id="addButton" layoutX="14.0" layoutY="438.0" mnemonicParsing="false" onAction="#addClicked" prefWidth="62.0" text="Add" />
+    <Button fx:id="connectButton" layoutX="34.0" layoutY="474.0" mnemonicParsing="false" onAction="#connectClicked" text="Connect" />
+  </children>
+  <stylesheets>
+    <URL value="@style.css" />
+  </stylesheets>
+</AnchorPane>
